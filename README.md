@@ -1,5 +1,5 @@
 # What is autoRICEWQ?
-This project aims to be a handler input creation and running of multiple [RICEWQ](https://www.waterborne-env.com/model/ricewq-19/) simulations. 
+This project aims to be a handler input creation and running for multiple [RICEWQ](https://www.waterborne-env.com/model/ricewq-19/) simulations. 
 
 # What is RICEWQ?
 
