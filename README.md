@@ -29,7 +29,7 @@ Next, clone this repository by opening a terminal and typing the following comma
 
 If you do not want to install git, you can instead download [main.zip](https://github.com/backmind/autoRICEWQ/archive/refs/heads/main.zip), unzip it, rename the resulting directory to `autoRICEWQ` and move it to your development directory.
 
-If you are familiar with Python and you know how to install Python libraries, go ahead and install the libraries listed in `requirements.txt` and jump to the [Installing RICEWQ](#installing-ricewq) section. If you need detailed instructions, please read on.
+If you are familiar with Python and you know how to install Python libraries, go ahead and install the libraries listed in `requirements.txt` and jump to the [Copy RICEWQ engine](#copy-ricewq-engine) section. If you need detailed instructions, please read on.
 
 ## Python 
 Of course, you obviously need Python. Python 3 is already preinstalled on many systems nowadays. You can check which version you have by typing the following command (you may need to replace `python3` with `python`):
