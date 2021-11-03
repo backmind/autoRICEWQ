@@ -15,7 +15,7 @@ From the description in its [website](https://www.waterborne-env.com/model/ricew
 
 # What is the problem?
 
-The problem is the input data for RICEWQ 1.92 lies on an input text file with absolute format dependence. Tailoring by hand a correct input data to run a simulation is very time consuming and tedious. Thus, **this project aims to offer a very simple way to (1) parse input from Excel files, (2) run the RICEWQ 1.92 model and (3) parse the output back into Excel**. This facilitates the process of running hundreds or even thousands of simulations with ease.
+The problem is the input data for RICEWQ 1.92 lies on an input text file with an absolute format dependence. Tailoring by hand a correct input data to run a simulation is very time consuming and tedious. Thus, **this project aims to offer a very simple way to (1) parse input from Excel files, (2) run the RICEWQ 1.92 model and (3) parse the output back into Excel**. This facilitates the process of running hundreds or even thousands of simulations with ease.
 
 # Installation
 
