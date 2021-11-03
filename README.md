@@ -66,7 +66,7 @@ As this project is a handler for the creation and the run of multiple simulation
 Great! You're all set!
 
 # Utilisation
-To run autoRICEWQ you need to have the [input files](#input-files-setting-up) ready and the [meteorological data](#meteorological-data). The, you can run the simulations just by executing **RICE192.bat** just for Windows or the next command line at the **\\autoRICEWQ\\** folder in any system:
+To run autoRICEWQ you need to have the [input files](#input-files-setting-up) ready and the [meteorological data](#meteorological-data). The, you can run the simulations just by executing **RICE192.bat** on Windows or the next command line at **\\autoRICEWQ\\** folder in any system:
 
     $ python3 RICE192.py arg
     
