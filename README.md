@@ -1,5 +1,5 @@
 # What is autoRICEWQ?
-This project aims to be a handler input creation and running for multiple [RICEWQ](https://www.waterborne-env.com/model/ricewq-19/) simulations. 
+This project aims to be a handler for input creation and running of multiple [RICEWQ](https://www.waterborne-env.com/model/ricewq-19/) simulations.
 
 # What is RICEWQ?
 
@@ -61,11 +61,13 @@ Next, use pip to install the required python packages. If you are not using virt
 
 ## Copy RICEWQ engine
 
-As this project is a handler for the creation and the run of multiple simulations by RICEWQ 1.92, you need RICEWQ 1.92 binaries. Contact info@waterborne-env.com to register to receive a download. Once you have de binaries you should copy **RICE192.EXE** inside of the folder **\\autoRICEWQ\\bin\\**
+As this project is a handler for input creation and running of multiple RICEWQ 1.92 simulations, **you need RICEWQ 1.92 binaries**. Contact info@waterborne-env.com to receive a download. RICEWQ 1.92 binaries are freeware but as waterborne-env have no public direct download, this project autoRICEWQ is not sharing it. Once you have the binaries you should copy **RICE192.EXE** inside of the folder \\autoRICEWQ\\**bin\\**
 
 Great! You're all set!
 
 # Utilisation
+It is very recommended to be familiarized with RICEWQ model or to check the manual that comes with it to understand the meaning of the multiple inputs the model needs.
+
 To run autoRICEWQ you need to have the [input files](#input-files-setting-up) ready and the [meteorological data](#meteorological-data). The, you can run the simulations just by executing **RICE192.bat** on Windows or the next command line at **\\autoRICEWQ\\** folder in any system:
 
     $ python3 RICE192.py arg
@@ -73,7 +75,7 @@ To run autoRICEWQ you need to have the [input files](#input-files-setting-up) re
 where _arg_ can be **y** or **n** to halt on errors of keep with the remaining simulations if errors respectively.
 
 ## Input Files setting up
-In order to run simulations, you need to create the input files you want to run. You can find examples of those **files inside \\autoRICEWQ\\input\\**, they are three:
+In order to run simulations, you need to create the input files you want to run. You can find examples of those files inside \\autoRICEWQ\\**input\\**, they are three:
 1. inp_sim.xlsx: data related to the dates of the simulation, the area of the crops, and so on
 2. inp_hidro.xlsx: data regarding the water balance of the crops
 3. inp_chem.xlsx: data of the chemicals, metabolites, and its characteristics
@@ -83,12 +85,12 @@ Each one of these files can have multiple sheets, and there will be a number of 
 **Sheetnames matter, only the sheets with a name starting with "+", wherever the file, will be simulated**.
 
 ## Meteorological data
-Any RICEWQ simulation needs meteorological data. This data should exist for the range of dates the simulation is running, and it comprehends Date, Mean temperature (ºC), Precipitation (mm) and evapotranspiration. You can find examples of this files at the folder **\\autoRICEWQ\\meteo_data\\**.
+Any RICEWQ simulation needs meteorological data. This data should exist for the range of dates the simulation is running, and it comprehends Date, Mean temperature (ºC), Precipitation (mm) and evapotranspiration. You can find examples of this files at the folder \\autoRICEWQ\\**meteo_data\\**.
 
 All the filenames in \\meteo_data\\ are in de form **CODE**\_XXX, where CODE identifies a specific meteo data. This CODE is attached to a simulation through _inp\_sim_ D6 cell. 
 
 ## Output files
-autoRICEWQ automatically handles the output from RICEWQ and parses it into Excel. Then, a new folder with the results is created at **\\autoRICEWQ\\results\\**, the name of the folders is in the form: 
+autoRICEWQ automatically handles the output from RICEWQ and parses it into Excel. Then, a new folder with the results is created at \\autoRICEWQ\\**results\\**, the name of the folders is in the form: 
 
     "inp_sim sheetname" [("inp_sim custom_label")] + _ + "inp_hidro sheetname" + _ + "inp_chem sheetname"
     
@@ -96,3 +98,6 @@ where the optional part of ("inp_sim custom_label") will be there if and only if
 
 ### Errors and exceptions
 In the devious case of an error during the execution occurs, output files will be moved to the same folder indicated in [Output files](#output-files) but with a preceding "ERROR-" word in the folder name. Inside the folder will be a file "run.log" with the info of the error. Those errors are registered nevertheless they are coming from autoRICEWQ or from RICEWQ, in order to accurately help to fix them.
+
+# Disclaimer
+The contributors of autoRICEWQ are not part of the team nor involved with RICEWQ or Waterborne Environmental, Inc. The autor of autoRICEWQ wants to thank Waterborne Environmental, Inc. for the development of the RICEWQ software and model, which is really useful.
