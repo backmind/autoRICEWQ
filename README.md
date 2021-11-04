@@ -10,7 +10,7 @@ From the description in its [website](https://www.waterborne-env.com/model/ricew
 > Rice production presents a unique problem with respect to agrochemical runoff because of the high seasonal rainfall, water management, and proximity of cropland to surface water bodies. Existing pesticide transport models are not configured to simulate the flooding conditions, overflow, and controlled releases of water that are typical under rice >production. RICEWQ was developed to simulate water and chemical mass balance associated with these unique governing processes.
 >Water mass balance takes into account precipitation, evaporation, seepage, overflow, irrigation, and drainage. Pesticide mass balance can accommodate dilution, advection, volatilization, partitioning between water/sediment, decay in water and sediment, burial in sediment, and re-suspension from sediment. The model can simulate up to five chemicals/metabolites.
 > ## MODEL REGISTRATION
-> RIVWQ is an aquatic fate and transport model for evaluating flowing water scenarios. Although our models are distributed as freeware, donations are encouraged to cover costs for model development, distribution, and technical support.
+> RICEWQ is an aquatic fate and transport model for evaluating flowing water scenarios. Although our models are distributed as freeware, donations are encouraged to cover costs for model development, distribution, and technical support.
 >
 >Please contact info@waterborne-env.com to register to receive a download of this model.
 
