@@ -117,7 +117,9 @@ def tst():
 
 def compose_just_title(sheet):
     cellname = sheet.cell(2, 4).value
-    sheetname = sheet.title[1:]
+    sheetname = sheet.title
+    if sheetname[0] == "+":
+        sheetname=sheetname[1:]
     if cellname == sheetname:
         sim_label = sheet.cell(2, 4).value
     else:
@@ -131,7 +133,7 @@ def compose_title(sheet):
     sim_description = ["",""]
 
     cell_description = sheet.cell(3, 4).value
-    cell_description.replace("/n", " ")
+    cell_description=cell_description.replace("\n", " ")
     if len(cell_description) > 0:
         if len(cell_description) < 76:
             sim_description[0] = cell_description
@@ -143,7 +145,6 @@ def compose_title(sheet):
 
 
     return sim_label+"\n "+desc
-
 
 def compose_parse_date_old(cell, leading_zero_month=False):
 

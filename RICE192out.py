@@ -25,7 +25,10 @@ def move_results(sim_name=""):
     path = 'results\\'+sim_name
     files = glob.glob("bin\\*.*")
     files.remove('bin\\RICE192.EXE')
-    files.remove('bin\\.gitignore')
+    try:
+        files.remove('bin\\.gitignore')
+    except:
+        pass
 
     logging.shutdown()
 
