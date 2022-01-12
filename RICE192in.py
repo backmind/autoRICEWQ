@@ -207,7 +207,7 @@ def compose_line_cropdates(sheet):
 
 def compose_panel5B(sheet):
     cells = sheet["D"][12:22]
-    template = "{0:4.1f}  {1:4.1f}   {2:4.1f}  {3:4.2f}  {4:4.1f}  {5:4.2f}  {6:4.2f} {7:4.2f}  {8:4.2f}   {9:4.1f}".format(
+    template = "{0:4.2f}  {1:4.1f}   {2:4.1f}  {3:4.2f}  {4:4.1f}  {5:4.2f}  {6:4.2f} {7:4.2f}  {8:4.2f}   {9:4.1f}".format(
         *[cell.value for cell in cells])
     return template
 
