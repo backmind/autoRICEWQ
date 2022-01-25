@@ -94,7 +94,7 @@ def process_pesticide_mass(sim_name="", delete_file=True, save_file=False):
 
 
     df = pd.read_csv(StringIO(out_file), header=[0])
-    df.index = pd.to_datetime(df.index,dayfirst=True,format="%d-%m-%y",infer_datetime_format=True)
+    df.index = pd.to_datetime(df.index,dayfirst=True,format="%d-%m-%y",infer_datetime_format=True).date
     if save_file:
         df.to_excel("bin\\"+sim_name+".xlsx")
     if delete_file:
@@ -127,7 +127,7 @@ def process_paddy_outflow(sim_name="", delete_file=True, save_file=False):
     out_file = out_file[:-1]
 
     df = pd.read_csv(StringIO(out_file), header=[0])
-    df.index = pd.to_datetime(df.index,dayfirst=True,format="%d-%m-%y",infer_datetime_format=True)
+    df.index = pd.to_datetime(df.index,dayfirst=True,format="%d-%m-%y",infer_datetime_format=True).date
     if save_file:
         df.to_excel("bin\\"+sim_name+".xlsx")
     if delete_file:
@@ -157,7 +157,7 @@ def process_water_balance(sim_name="", delete_file=True, save_file=False):
     out_file = out_file[:-1]
 
     df = pd.read_csv(StringIO(out_file), header=[0])
-    df.index = pd.to_datetime(df.index,dayfirst=True,format="%d-%m-%y",infer_datetime_format=True)
+    df.index = pd.to_datetime(df.index,dayfirst=True,format="%d-%m-%y",infer_datetime_format=True).date
     if save_file:
         df.to_excel("bin\\"+sim_name+".xlsx")
     if delete_file:
@@ -211,7 +211,7 @@ def process_pesticide_balance(file_name, sim_name="", delete_file=True, save_fil
         out_file = out_file[:-1]
 
         df = pd.read_csv(StringIO(out_file), header=[0])
-        df.index = pd.to_datetime(df.index,dayfirst=True,format="%d-%m-%y",infer_datetime_format=True)
+        df.index = pd.to_datetime(df.index,dayfirst=True,format="%d-%m-%y",infer_datetime_format=True).date
         if save_file:
             df.to_excel("bin\\"+sim_name+".xlsx")
         if delete_file:
